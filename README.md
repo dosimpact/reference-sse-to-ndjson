@@ -63,10 +63,10 @@ Next.js에서 스트리밍을 지원하는 주요 방법은 다음과 같습니�
 ## 프로젝트 구조
 
 ```mermaid
-graph TD;
-    A[Client (Next.js)] --> B[BFF (Nest.js)];
-    B --> C[Backend (Nest.js)];
-    C -->|SSE| B;
-    B -->|NDJSON| A;
+graph TD
+    A[Client (Next.js)] --> B[BFF (Nest.js)]
+    B --> C[Backend (Nest.js)]
+    C -->|SSE| B
+    B -->|NDJSON| A
 ```
 
