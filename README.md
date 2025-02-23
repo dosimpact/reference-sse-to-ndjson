@@ -1,6 +1,18 @@
 # SSE to NDJSON Demo  
 
-현재 구현된 디렉터리 
+
+## 프로젝트 구조
+
+```mermaid
+graph TD
+    A[Clien tNext.js] -->|Request| B[BFF Nest.js]
+    B -->|Request| C[Backend Nest.js]
+    C -->|SSE Response| B
+    B -->|NDJSON Response| A
+```
+ 
+
+### 현재 구현된 디렉터리 
 /backend : nest.js project   
 /bff : nest.js project  
 /client : next.js project    
@@ -59,14 +71,3 @@ Next.js에서 스트리밍을 지원하는 주요 방법은 다음과 같습니�
   - IE, RN, Serverless 미지원
 - HTTP/1.1 전용이라 HTTP/2 미지원
   - http/2 기반의 서버는 처리 불가
-
-## 프로젝트 구조
-
-```mermaid
-graph TD
-    A[Client (Next.js)] --> B[BFF (Nest.js)]
-    B --> C[Backend (Nest.js)]
-    C -->|SSE| B
-    B -->|NDJSON| A
-```
-
