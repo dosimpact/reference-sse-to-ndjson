@@ -1,9 +1,9 @@
 # SSE to NDJSON Demo  
 
 현재 구현된 디렉터리 
-/backend : nest.js project
-/bff : nest.js project
-/client : next.js project  
+/backend : nest.js project   
+/bff : nest.js project  
+/client : next.js project    
 
 구현해야할 시나리오   
 
@@ -17,6 +17,7 @@
 - https://sdk.vercel.ai/docs/ai-sdk-rsc/streaming-values#createstreamablevalue
 
 4.client에서 해당 데이터를 받아서 적절하게 화면에 보여주면 된다.  
+- https://sdk.vercel.ai/docs/ai-sdk-ui/streaming-data#processing-custom-data-in-usechat
 
 5.backend에서 SSE는 가끔씩 오류를 보낼 수 있어, 그런 경우에 대비해서 bff에서 애러 NDJSON 처리 및 UI표기 해줘.  
 
